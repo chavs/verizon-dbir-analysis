@@ -1,0 +1,7 @@
+node_modules/
+01-raw-pdfs/
+02-extracted/
+.wrangler/
+*.log
+.DS_Store
+.agents/

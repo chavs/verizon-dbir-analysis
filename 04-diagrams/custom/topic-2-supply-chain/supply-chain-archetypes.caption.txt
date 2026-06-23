@@ -1,0 +1,1 @@
+Three vendor archetypes converge on customer breach: code compromise, data-hosting credential abuse, or direct network pivot.

@@ -1,0 +1,12 @@
+flowchart LR
+    A[Developer commits secret] --> B[Git repo leak]
+    B --> C[Attacker harvests token]
+    C --> D[OAuth replay to Salesforce]
+    D --> E[Data exfiltration]
+    
+    F[Service account with weak password] --> G[Kerberoasting]
+    G --> H[Rogue VM on hypervisor]
+    H --> I[Persistent access]
+    
+    J[CI/CD pipeline] --> K[GitHub Actions compromise]
+    K --> L[Secrets exposed across 23K repos]

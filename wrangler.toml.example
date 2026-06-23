@@ -1,0 +1,24 @@
+name = "dbir-agents"
+main = "src/index.ts"
+compatibility_date = "2025-04-01"
+compatibility_flags = ["nodejs_compat"]
+# account_id = "YOUR_ACCOUNT_ID_HERE"
+
+# Workers AI — primary: kimi-k2.6, fallback: llama-3.1-8b
+[ai]
+binding = "AI"
+
+# R2 — raw PDFs + generated artifacts
+[[r2_buckets]]
+binding = "DBIR_PDFS"
+bucket_name = "dbir-pdfs"
+
+# D1 — pipeline runs, artifacts, extraction cache
+[[d1_databases]]
+binding = "DB"
+database_name = "dbir-analysis"
+# database_id = "YOUR_DATABASE_ID_HERE"
+
+# Environment variables (set via wrangler secrets)
+# PRIMARY_MODEL set via: wrangler secret put PRIMARY_MODEL
+vars = { MAX_TOKENS = "4096", TEMPERATURE = "0.3", PIPELINE_MODE = "sequential" }

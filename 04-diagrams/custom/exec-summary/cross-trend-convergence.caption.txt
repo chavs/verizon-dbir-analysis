@@ -1,0 +1,1 @@
+All four trends converge on one architectural principle: replace long-lived shared credentials with short-lived, narrowly scoped, attestable identities for every workload, human, and AI agent.

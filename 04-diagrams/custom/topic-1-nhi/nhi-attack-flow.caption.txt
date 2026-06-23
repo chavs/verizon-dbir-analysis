@@ -1,0 +1,1 @@
+NHI compromise paths: leaked secrets lead to OAuth replay; weak service accounts enable Kerberoasting; CI/CD pipelines amplify blast radius.

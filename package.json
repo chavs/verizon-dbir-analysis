@@ -1,0 +1,27 @@
+{
+  "name": "dbir-agents",
+  "version": "0.2.0",
+  "description": "Multi-agent analysis of Verizon DBIR 2020-2026 using Cloudflare Workers, Workflows, and Agents SDK",
+  "type": "module",
+  "scripts": {
+    "extract": "tsx scripts/extract-text.ts",
+    "render": "tsx scripts/render-pages.ts",
+    "index": "tsx scripts/build-keyword-index.ts",
+    "phase0": "npm run extract && npm run index",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^4.7.76"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260602.1",
+    "@types/node": "^22.9.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "wrangler": "^4.97.0"
+  },
+  "license": "MIT"
+}
