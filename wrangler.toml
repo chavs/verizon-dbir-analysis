@@ -2,7 +2,7 @@ name = "dbir-agents"
 main = "src/index.ts"
 compatibility_date = "2025-04-01"
 compatibility_flags = ["nodejs_compat"]
-account_id = "de51d1ebafe63e59aec85f851879e40f"
+# account_id = "YOUR_ACCOUNT_ID_HERE"
 
 # Workers AI — primary: kimi-k2.6, fallback: llama-3.1-8b
 [ai]
@@ -17,7 +17,7 @@ bucket_name = "dbir-pdfs"
 [[d1_databases]]
 binding = "DB"
 database_name = "dbir-analysis"
-database_id = "901ecf8b-3425-471b-9bcf-b16171522e45"
+# database_id = "YOUR_DATABASE_ID_HERE"
 
 # Vectorize — semantic search over DBIR chunks
 # [[vectorize]]
