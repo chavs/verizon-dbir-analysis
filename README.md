@@ -155,6 +155,12 @@ MIT — feel free to fork and adapt for your own DBIR research or other longitud
 
 ---
 
+## Security
+
+See [SECURITY.md](SECURITY.md) for dependency security notes, including the `sharp >=0.35.0` override rationale and when it can be removed.
+
+---
+
 ## Credits
 
 - Built with [Cloudflare Workers](https://workers.cloudflare.com) and [Workers AI](https://ai.cloudflare.com)
