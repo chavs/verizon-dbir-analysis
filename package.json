@@ -17,11 +17,14 @@
     "pdfjs-dist": "^4.7.76"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20260602.1",
+    "@cloudflare/workers-types": "^5.20260723.1",
     "@types/node": "^22.9.0",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3",
     "wrangler": "^4.97.0"
+  },
+  "overrides": {
+    "sharp": ">=0.35.0"
   },
   "license": "MIT"
 }
